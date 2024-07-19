@@ -9,7 +9,6 @@
             background-color: #2C2C2C;
             color: white;
             font-family: Arial, sans-serif;
-            text-align: center;
             margin: 0;
             padding: 0;
         }
@@ -27,21 +26,27 @@
         }
         .container {
             margin-top: 50px;
+            text-align: center;
         }
         .hidden {
             display: none;
         }
         .item {
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
             margin: 20px 0;
+            padding: 10px;
         }
         .item img {
             width: 50px;
             height: 50px;
             background-color: #9B89FF;
             margin-right: 20px;
+        }
+        .item span {
+            margin-right: 20px;
+            font-size: 1.2em;
         }
         .item a {
             background-color: #00B33C;
@@ -52,13 +57,26 @@
         }
         .info-section {
             padding: 20px;
-            margin: 20px;
+            margin: 20px auto;
             border: 1px solid #00B33C;
             border-radius: 5px;
+            max-width: 600px;
         }
         .welcome {
             font-size: 2em;
             color: #00B33C;
+        }
+        .welcome-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .welcome-text {
+            max-width: 600px;
+        }
+        .welcome-image {
+            transform: rotate(10deg);
         }
     </style>
 </head>
@@ -73,27 +91,34 @@
     </div>
 
     <div id="inicio" class="container">
-        <h1 class="welcome">¡Bienvenido!</h1>
-        <p>Loquendo Alert Creators es la página por excelencia de la comunidad loquendera para descargar tus archivos.</p>
-        <div class="info-section">
-            <h2>Información</h2>
-            <p>Aquí puedes dejar tus notas e información importante sobre la página.</p>
+        <div class="welcome-container">
+            <div class="welcome-text">
+                <h1 class="welcome">¡Bienvenido!</h1>
+                <p>Loquendo Alert Creators es la página por excelencia de la comunidad loquendera para descargar tus archivos.</p>
+                <div class="info-section">
+                    <h2>Información</h2>
+                    <p>Aquí puedes dejar tus notas e información importante sobre la página.</p>
+                </div>
+            </div>
+            <div class="welcome-image">
+                <img src="path_to_image.png" alt="Imagen de Bienvenida">
+            </div>
         </div>
     </div>
 
     <div id="descargas" class="container hidden">
         <div class="item">
-            <img src="icon.png" alt="Icono">
+            <img src="path_to_image.png" alt="Icono">
             <span>Sony Vegas Pro 11</span>
             <a href="tu_enlace_de_descarga_1">Download here</a>
         </div>
         <div class="item">
-            <img src="icon.png" alt="Icono">
+            <img src="path_to_image.png" alt="Icono">
             <span>Sony Vegas Pro 11</span>
             <a href="tu_enlace_de_descarga_2">Download here</a>
         </div>
         <div class="item">
-            <img src="icon.png" alt="Icono">
+            <img src="path_to_image.png" alt="Icono">
             <span>Sony Vegas Pro 11</span>
             <a href="tu_enlace_de_descarga_3">Download here</a>
         </div>
